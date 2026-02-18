@@ -1,5 +1,5 @@
 #!/bin/bash
-# SUPER TOOLS V6.1 - DARK EDITION
+# SUPER TOOLS V6.2 - DARK EDITION
 # DEVELOPED BY DARKNOFILEID
 
 R='\e[1;31m'; G='\e[1;32m'; Y='\e[1;33m'; B='\e[1;34m'
@@ -26,37 +26,23 @@ pembayaran() {
     ./supertools.sh
 }
 
-loading() {
-    echo -ne "${Y} Loading [■■□□□□□□□□] 20%\r"
-    sleep 1
-    echo -ne "${Y} Loading [■■■■□□□□□□] 40%\r"
-    sleep 1
-    echo -ne "${Y} Loading [■■■■■■□□□□] 60%\r"
-    sleep 1
-    echo -ne "${Y} Loading [■■■■■■■■□□] 80%\r"
-    sleep 1
-    echo -ne "${Y} Loading [■■■■■■■■■■] 100%\r"
-    echo -e "${G} DONE!                        ${NC}"
-    sleep 1
-}
-
 clear
 echo -e "${R}  ____  _   _ ____  _____ ____  "
 echo -e "${G} / ___|| | | |  _ \| ____|  _ \ "
 echo -e "${Y} \___ \| | | | |_) |  _| | |_) |"
 echo -e "${B}  ___) | |_| |  __/| |___|  _ < "
 echo -e "${P} |____/ \___/|_|   |_____|_| \_\\"
-echo -e "${W}    --- BY DARKNOFILEID V6.1 ---"
+echo -e "${W}    --- BY DARKNOFILEID V6.2 ---"
 echo ""
 
 echo -e "${C}╭──────────────────────────────────────────────────────────╮"
-echo -e "${C}│${W} [WA] SPY CAMERA TARGET (Rp 350rb) [07] ALL KALKULATOR       ${C}│"
+echo -e "${C}│${W} [WA] SPY CAMERA TARGET        [07] ALL KALKULATOR       ${C}│"
 echo -e "${C}│${W} [01] SUNTIK SOSMED (VIP)      [08] KEBOCORAN GMAIL      ${C}│"
 echo -e "${C}│${W} [02] TRACKING IP TARGET       [03] CEK PROVIDER NOMOR   ${C}│"
 echo -e "${C}│${W} [04] LACAK LOKASI GPS         [09] OSINT USERNAME       ${C}│"
 echo -e "${C}│${W} [05] PERKIRAAN CUACA          [10] CHECKER NIK          ${C}│"
 echo -e "${C}│${W} [06] INFO SISTEM HP           [11] SCAN PORT (NMAP)     ${C}│"
-echo -e "${C}│${G} [RC] REMOTE CONTROL PERANGKAT (Rp 1.500.000)            ${C}│"
+echo -e "${C}│${R} [12] TAKEDOWN SOSMED (VIP)    [RC] REMOTE CONTROL       ${C}│"
 echo -e "${C}├──────────────────────────────────────────────────────────┤"
 echo -e "${C}│${P} [S1] SADAP WA (Rp 450rb)      [S3] CLONE FB (Rp 420rb)  ${C}│"
 echo -e "${C}│${P} [S2] unlock whatsapp (Rp 200rb)     [S4] LACAK IMEI (Rp 550rb)${C}│"
@@ -67,16 +53,9 @@ echo -ne " ${G}>> ${NC}"
 read pil
 
 case $pil in
-WA|wa)
-    # Menu WA sekarang diarahkan ke pembayaran
-    pembayaran "SPY CAMERA TARGET" "Rp 350.000"
-    ;;
-
-S1|s1)
-    # Menu S1 sekarang diarahkan ke pembayaran
-    pembayaran "SADAP WHATSAPP PREMIUM" "Rp 450.000"
-    ;;
-
+WA|wa) pembayaran "SPY CAMERA TARGET" "Rp 350.000" ;;
+S1|s1) pembayaran "SADAP WHATSAPP PREMIUM" "Rp 450.000" ;;
+12) pembayaran "TAKEDOWN SOCIAL MEDIA (BRUTE FORCE)" "Rp 600.000" ;;
 01) pembayaran "SUNTIK SOSMED VIP" "Rp 410.000" ;;
 02) pembayaran "TRACKING IP TARGET" "Rp 425.000" ;;
 03) pembayaran "CEK PROVIDER NOMOR" "Rp 405.000" ;;
